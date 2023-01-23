@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
+   <children>
+      <TableView fx:id="vaults" layoutX="49.0" layoutY="69.0" prefHeight="170.0" prefWidth="153.0">
+        <columns>
+          <TableColumn fx:id="vault_id" prefWidth="75.0" text="vault_id" />
+          <TableColumn fx:id="responsible" prefWidth="75.0" text="responsible" />
+        </columns>
+      </TableView>
+      <TableView fx:id="accounting" layoutX="56.0" layoutY="458.0" prefHeight="170.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="acc_id" prefWidth="70.0" text="acc_id" />
+            <TableColumn fx:id="acc_date" text="acc_date" />
+            <TableColumn fx:id="prod_count" prefWidth="75.0" text="prod_count" />
+            <TableColumn fx:id="unit" prefWidth="75.0" text="unit" />
+            <TableColumn fx:id="prod_id" prefWidth="75.0" text="prod_id" />
+            <TableColumn fx:id="acc_vault_id" prefWidth="75.0" text="vault_id" />
+            <TableColumn fx:id="acc_buyer_id" prefWidth="75.0" text="buyer_id" />
+         </columns>
+      </TableView>
+      <TableView fx:id="buyers" layoutX="51.0" layoutY="259.0" prefHeight="170.0" prefWidth="409.0">
+         <columns>
+            <TableColumn fx:id="buyer_id" prefWidth="75.0" text="buyer_id" />
+            <TableColumn fx:id="buyer_name" prefWidth="122.0" text="buyer_name" />
+            <TableColumn fx:id="address" prefWidth="210.0" text="address" />
+         </columns>
+      </TableView>
+      <TextField fx:id="FieldVaultId" layoutX="771.0" layoutY="70.0" prefHeight="26.0" prefWidth="140.0" />
+      <Button fx:id="ButtonExecute" layoutX="814.0" layoutY="198.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="76.0" text="Execute" />
+      <Label layoutX="693.0" layoutY="76.0" prefHeight="17.0" prefWidth="75.0" text="Код склада" />
+      <DatePicker fx:id="DateStart" layoutX="771.0" layoutY="112.0" prefHeight="26.0" prefWidth="187.0" />
+      <Label layoutX="687.0" layoutY="117.0" prefHeight="17.0" prefWidth="81.0" text="Дата начала" />
+      <Label layoutX="669.0" layoutY="160.0" prefHeight="17.0" prefWidth="95.0" text="Дата окончания" />
+      <DatePicker fx:id="DateFinish" layoutX="771.0" layoutY="157.0" prefHeight="26.0" prefWidth="188.0" />
+      <TextField fx:id="fieldAnswer" layoutX="771.0" layoutY="239.0" prefHeight="26.0" prefWidth="167.0" />
+      <Label layoutX="630.0" layoutY="243.0" text="Количество Поставок" />
+      <Label layoutX="241.0" layoutY="87.0" prefHeight="17.0" prefWidth="100.0" text="Номер склада" />
+      <Label layoutX="232.0" layoutY="117.0" prefHeight="17.0" prefWidth="100.0" text="Ответственный" />
+      <TextField fx:id="changeVaultId" layoutX="340.0" layoutY="82.0" />
+      <TextField fx:id="ChangeResponsible" layoutX="340.0" layoutY="112.0" />
+      <Button fx:id="btnInsertVaults" layoutX="264.0" layoutY="148.0" mnemonicParsing="false" text="Insert" />
+      <Button fx:id="btnUpdateVaults" layoutX="338.0" layoutY="148.0" mnemonicParsing="false" text="Update" />
+      <Button fx:id="btnDeleteVaults" layoutX="423.0" layoutY="148.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="btnRefresh" layoutX="265.0" layoutY="198.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="133.0" text="Refresh" />
+      <Button fx:id="alternativeForm" layoutX="24.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="126.0" text="AlternativeForm" />
+      <Label layoutX="471.0" layoutY="294.0" prefHeight="17.0" prefWidth="110.0" text="Номер покупателя" />
+      <Label layoutX="476.0" layoutY="324.0" prefHeight="17.0" prefWidth="100.0" text="Имя покупателя" />
+      <TextField fx:id="changeBuyerId" layoutX="584.0" layoutY="289.0" />
+      <TextField fx:id="changeBuyerName" layoutX="584.0" layoutY="319.0" />
+      <Label layoutX="465.0" layoutY="357.0" prefHeight="17.0" prefWidth="110.0" text="Адрес покупателя" />
+      <TextField fx:id="changeBuyerAddress" layoutX="584.0" layoutY="353.0" />
+      <Button fx:id="btnInsertBuyers" layoutX="532.0" layoutY="391.0" mnemonicParsing="false" text="Insert" />
+      <Button fx:id="btnUpdateBuyers" layoutX="606.0" layoutY="391.0" mnemonicParsing="false" text="Update" />
+      <Button fx:id="btnDeleteBuyers" layoutX="691.0" layoutY="391.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="btnTask1" layoutX="175.0" layoutY="25.0" mnemonicParsing="false" text="Task1" />
+      <Button fx:id="btnTask2" layoutX="235.0" layoutY="25.0" mnemonicParsing="false" text="Task2" />
+      <Button fx:id="btnTask3" layoutX="295.0" layoutY="25.0" mnemonicParsing="false" text="Task3" />
+   </children>
+</AnchorPane>

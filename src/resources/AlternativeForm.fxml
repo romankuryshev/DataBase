@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.ControllerAF">
+   <children>
+      <TableView fx:id="allTables" layoutX="31.0" layoutY="27.0" prefHeight="200.0" prefWidth="846.0">
+         <columns>
+            <TableColumn fx:id="acc_id" prefWidth="75.0" text="acc_id" />
+            <TableColumn fx:id="acc_date" prefWidth="75.0" text="acc_date" />
+            <TableColumn fx:id="prod_count" prefWidth="75.0" text="prod_count" />
+            <TableColumn fx:id="unit" prefWidth="75.0" text="unit" />
+            <TableColumn fx:id="prod_id" prefWidth="75.0" text="prod_id" />
+            <TableColumn fx:id="vault_id" prefWidth="75.0" text="vault_id" />
+            <TableColumn fx:id="buyer_id" prefWidth="75.0" text="buyer_id" />
+            <TableColumn fx:id="responsible" prefWidth="111.2940673828125" text="responsible" />
+            <TableColumn fx:id="buyer_name" prefWidth="81.02471923828125" text="buyer_name" />
+            <TableColumn fx:id="buyer_address" prefWidth="119.34527587890625" text="buyer_address" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
